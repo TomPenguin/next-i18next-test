@@ -1,7 +1,7 @@
-const { i18n } = require("./next-i18next.config");
+import nextI18NextConfig from "./next-i18next.config.cjs";
 
-module.exports = {
-    i18n,
+export default {
+    i18n: nextI18NextConfig.i18n,
     experimental: {
         newNextLinkBehavior: true,
     },
